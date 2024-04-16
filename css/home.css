@@ -1,0 +1,66 @@
+/*CONTENIDO TEXTUAL*/
+main {
+    .sectionHome {
+    /*background-color: palegreen;*/
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 1em;
+    }
+    .tituloHome {
+        /*background-color: lightslategray;*/
+        text-align: center;
+        font-family: "MonteCarlo", cursive;
+        font-size: 14rem;
+        color: palevioletred;
+        margin-top: -0.6em;
+        margin-bottom: -0.45em;
+        text-shadow: 1.8px 1.8px 3.8px rgba(3, 250, 81, 0.3);
+    }
+    .subtituloHome {
+        /*background-color: blueviolet;*/
+        text-align: right;
+        font-size: 1.5rem;
+        padding-right: 3.5em;
+        text-shadow: 2px 2px 4px rgba(0, 196, 62, 0.3); 
+        margin-bottom: 2em;   
+    }
+    .contenedorTexto {
+        margin: 1em 1em 0 1em; 
+        .textoHome {
+            /*background-color: blue;*/
+            text-align: center;
+            line-height: 1.5;
+            font-family: "Alumni Sans Pinstripe", sans-serif;
+            font-size: 2rem;
+            color:rgb(253, 214, 220);
+            text-shadow: 2px 2px 4px rgba(0, 196, 62, 0.3);
+        }
+    }
+}
+
+/*VIDEO DE FONDO*/
+.contenedorVideoInicial {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#videoFondo {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+@media screen and (max-width: 800px) {
+
+}

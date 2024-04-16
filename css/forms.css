@@ -1,0 +1,58 @@
+.formularioContenedor {
+    /*background-color: paleviolet;*/
+    /*background-image: linear-gradient(to bottom, #d87093, #ad5a77, #84465c, #5e3242, #3a1f29);*/
+    background-image: linear-gradient(to bottom, #d87093, #b65f7d, #964e67, #773e52, #592e3e);
+    border-radius: 2em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 1em;
+    margin: 1em 28em 1em;
+    padding: 1em;
+    .formularioContacto, .formularioiniciarSesion, .formularioRegistro {
+        .formularioGrupo {
+            align-items: center;
+            margin: 1em;
+        }
+            input {
+                font-family:"Alumni Sans Pinstripe", sans-serif;
+                font-weight: bold;
+                font-size: 1.4rem;
+                text-align: center;
+                width: 9em;
+            }
+            .formularioLabel {
+                font-family: "Alumni Sans Pinstripe", sans-serif; 
+                font-weight: bold;
+                font-size: 1.8rem;
+                color: black;
+            }
+        .textareaContacto {
+            padding: 0.4em 0 0 0;
+            textarea {
+                font-family: "Alumni Sans Pinstripe", sans-serif;
+                font-weight: bold;
+                text-align: center;
+                font-size: 1.4rem;
+            }
+        }
+    }
+    .anexosFormulario {
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: pink;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+    .anexosFormulario:hover {
+        color: whitesmoke;
+        text-shadow: 2px 2px 4px rgba(0, 196, 62, 0.3);
+        transform: scale(1.1); 
+    }
+}
+
+@media screen and (max-width: 800px) {
+    
+}
+

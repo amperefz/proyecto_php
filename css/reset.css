@@ -1,0 +1,84 @@
+/*FUENTES*/
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=MonteCarlo&display=swap');
+
+/*RESETEO*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color:var(rgb(216, 112, 147));
+    --secondary-color:var(rgb(255, 192, 203));
+    --third-color:var(rgb(94, 156, 94));
+}
+
+html {
+    size: 62.5%;
+    background-color: black;
+}
+
+body {
+    /*background-color: palegoldenrod;*/
+    width: 100%;
+    height: 100%;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+/*ESTILOS GENERALES*/ 
+h2 { 
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    color: pink;
+}
+
+/*h3 {
+    background-color: pink;
+    padding: 0.25em;
+    border-radius: 0.5em;
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+    font-weight: bold;
+    color: black;
+    size: 2rem;
+}*/
+
+p {
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: pink;
+}
+
+.buttons {
+    background-color: black;
+    border: 2px solid palevioletred;
+    border-radius: 0.5em;
+    margin-top: 0.5em;
+    gap: 20px;
+    font-family: "Alumni Sans Pinstripe", sans-serif; 
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: whitesmoke;
+    padding: 0.2em 0.4em;
+    cursor: pointer;
+}
+
+/*EFECTOS*/
+a:hover {
+    color:rgb(94, 156, 94);
+}
+
+
+@media screen and (max-width: 800px) {
+    
+}
+

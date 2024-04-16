@@ -1,0 +1,44 @@
+.sobrevideoclubContenedor {
+    /*background-color: palevioletred;*/
+    background-image: linear-gradient(to bottom, #d87093, #b65f7d, #964e67, #773e52, #592e3e);
+    margin: 0 25em;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    .sobrevideoclubTexto {
+        width: 90%;
+        margin: auto;
+        text-align:justify;
+        line-height: 1.5;
+        padding-top: 0.5em;
+        .textoResaltado {
+            text-align: center;
+            color: black;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+        }
+    }
+    .sobrevideoclubTexto1 {
+        /*background-color: goldenrod;*/
+        margin: 0 auto;
+        text-align:justify;
+        line-height: 1.5;
+        .textoSubrayado {
+            text-decoration: underline;
+            color: whitesmoke;
+        }
+    }
+    .enlacesPersonales {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 1em 0 0.5em 0;
+        gap: 15px;
+        /*Estilo de fuente*/
+        font-family: "Alumni Sans Pinstripe", sans-serif;
+        font-weight: bold;
+        font-size: 1.4rem;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    
+}

@@ -1,0 +1,107 @@
+main {
+    /*background-color: pink;*/
+    border-radius: 2em;
+    margin: 1em;
+    padding: 1em;
+    .buscarVideos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.6em;
+        margin-bottom: 0.3em;
+        .textoBuscador {
+            width: 9.7em;
+            font-family:"Alumni Sans Pinstripe", sans-serif;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+    }
+    .contenedorVideos {
+        background-color: palevioletred;
+        border-radius: 2em;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 3fr));
+        grid-column-gap: 1em;
+        grid-row-gap: 1em;
+        margin: 1em;
+        padding: 2em 1em;
+        .videoVideoclub {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            iframe { 
+                border-radius: 1em;
+            }
+            h2 {
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            }
+            h2:hover {
+                color: whitesmoke;
+                text-shadow: 2px 2px 4px rgba(0, 196, 62, 0.3);
+                transform: scale(1.1); 
+            }
+        }
+    }
+    .buttonsVideoclub {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5em;
+    }
+    .ultimosRegistros {
+        background-color: palevioletred;
+        border-radius: 2em;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        margin: 1.8em 1em;
+        .iconosFlecha {
+            /*background-color: aquamarine;*/
+            font-size: 1.8em;
+        }
+        .ultimosregistrosRotulo {
+            background-color: pink;
+            border-radius: 1em 1em 0 0;
+            font-family: "MonteCarlo", cursive;
+            color: black;
+            text-align: center;
+            font-size: 2rem;
+            padding: 0.2em 10em;
+        }
+        .ultimosregistrosVideos {
+            /*background-color: palevioletred;*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 2em;
+            padding-top: 0.5em;
+            padding-bottom: 1em;        
+            .videoVideoclub {
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                iframe { 
+                    border-radius: 1em;
+                }
+                h2 {
+                    font-size: 1.1rem;
+                    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+                }
+                h2:hover {
+                    color: whitesmoke;
+                    text-shadow: 2px 2px 4px rgba(0, 196, 62, 0.3);
+                    transform: scale(1.1); 
+                }
+            }
+        }
+    }
+}
+
+.iconoFlecha {
+    margin-bottom: 1em;
+    font-size: 2em;
+}
+
+@media screen and (max-width: 800px) {
+    
+}

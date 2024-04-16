@@ -1,0 +1,26 @@
+/*PARTIALS*/
+@import url("../css/partials.css");
+
+/*HOME*/
+@import url("../css/home.css");
+
+/*RESET*/
+@import url("../css/reset.css");
+
+/*FONTS*/
+@import url("../css/fonts.css");
+
+/*EFFECTS*/
+@import url("../css/effects.css");
+
+/*FORMS*/
+@import url("../css/forms.css");
+
+/*VIDEOCLUB*/
+@import url("../css/videoclub.css");
+
+/*SOBREVIDEOCLUB*/
+@import url("../css/sobrevideoclub.css");
+
+/*DETALLE*/
+@import url("../css/detalle.css");

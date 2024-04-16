@@ -1,0 +1,32 @@
+.sectionDetalle {
+    /*background-color: whitesmoke;*/
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+    margin: 0 1em 0 1em;
+    padding: 0.5em 0 0 0;
+    .iframeDetalle {
+        border-radius: 1em;
+        box-shadow: 0 0 0.5em pink;
+    }
+    .subtituloDetalle {
+        color: palevioletred;
+        font-size: 1.6rem;
+    }
+    .subtituloDetalle:hover {
+        color: whitesmoke;
+        text-shadow: 2px 2px 4px rgba(0, 196, 62, 0.3);
+        transform: scale(1.1); 
+    }
+    .textoDetalle {
+        font-family: "Alumni Sans Pinstripe", sans-serif;
+        font-size: 1.5rem;
+        line-height: 0.75;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    
+}

@@ -1,0 +1,85 @@
+/*HEADER*/
+header {
+    /*background-color: lightblue;*/
+    position: relative;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em;
+    .titulos {
+        /*background-color: lightsalmon;*/
+        font-family: "MonteCarlo", cursive;
+        font-size: 5rem;
+        color: palevioletred;
+        word-spacing: 0.1em;
+        padding: 0 1em;
+        margin: 0 auto;
+        text-shadow: 2px 2px 4px rgba(3, 250, 81, 0.3);
+    }
+    .iconos {
+        /*background-color: lightsalmon;*/
+        position: absolute;
+        top: 2em;
+        right: 2em;
+        height: 15vh;
+        padding: 0.25em;
+        color: whitesmoke;
+        font-size: 2.8rem;
+        text-shadow: 0.5px 0.5px 0.5px rgba(3, 250, 81, 0.3);
+        transform: translateY(-50%);
+    }
+    .listadoNavbar {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        font-family: "Alumni Sans Pinstripe", sans-serif;
+        font-weight: bold;
+        font-size: 1.5rem;
+        background-color: palevioletred;
+        border: 0.25em solid rgb(94, 156, 94);
+        padding: 0.25em 0.50em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    
+}
+
+/*FOOTER*/
+footer {
+    /*background-color: lightblue;*/
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+    .redesSociales {
+        /*background-color: lightsalmon;*/
+        display: flex;
+        font-size: 2.5rem;
+        gap: 0.5em;
+        a {
+            color: palevioletred;
+            font-size: 2.8rem;
+            i:hover {
+                color:rgb(94, 156, 94);
+            }
+        }
+    }
+    .derechosFooter {
+        /*background-color: lightsalmon;*/
+        font-family: "Alumni Sans Pinstripe", sans-serif;
+        font-weight: bold;
+        font-size: 1.3rem;
+        color: whitesmoke;  
+        margin-top: 0.25em;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    
+}
