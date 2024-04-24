@@ -5,11 +5,11 @@
     flex-direction: column;
     align-items: center;
     gap: 0.5em;
-    margin: 0 1em 0 1em;
-    padding: 0.5em 0 0 0;
+    padding: 0.5em 0 0.5em 0;
     .iframeDetalle {
         border-radius: 1em;
-        box-shadow: 0 0 0.5em pink;
+        margin-bottom: 0.5em;
+        /*box-shadow: 0 0 0.5em pink;*/
     }
     .subtituloDetalle {
         color: palevioletred;
@@ -24,6 +24,7 @@
         font-family: "Alumni Sans Pinstripe", sans-serif;
         font-size: 1.5rem;
         line-height: 0.75;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     }
 }
 
