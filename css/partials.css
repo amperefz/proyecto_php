@@ -6,7 +6,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 1em;
+    margin: 1 1em 0;
     .titulos {
         /*background-color: lightsalmon;*/
         font-family: "MonteCarlo", cursive;
@@ -59,6 +59,10 @@ header {
     }
 }
 
+.ocultarHeader {
+    visibility: hidden;
+}
+
 /*.iconos:hover + .listadoNavbar {
     display: block;
 }*/
@@ -73,36 +77,41 @@ header {
             padding: 0 1em;
         }
         .titulosDetalle {
-            font-size: 1.8rem;
+            font-size: 1rem;
         }
-        .iconos {
-            /*background-color: lightsalmon;*/
-            top: 0em;
-            right: 0em;
-            height: 8vh;
-            padding: 1em 0.5em;
-            font-size: 1.5rem;
-            transform: translateY(0%);
-        }
-        .listadoNavbar {
-            display: none;
-            position: absolute;
-            top: 0;
-            right: 0;
-            z-index: 1;
-            height: 30em;
-            font-family: "Alumni Sans Pinstripe", sans-serif;
-            font-weight: bold;
-            font-size: 1.5rem;
-            background-color: palevioletred;
-            border-radius: 1em;
-            padding: 0.25em 0.50em 1em;
-            opacity: 0.9;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-            /*box-shadow: 0px 0px 5px rgba(3, 250, 81, 0.5);*/
+        .navbarHeader {
+            display: flex;
+            text-align: center;
+            .iconos {
+                /*background-color: lightsalmon;*/
+                top: 0.1em;
+                right: 0.1em;
+                height: 8vh;
+                padding: 1em 0.5em;
+                font-size: 1.5rem;
+                transform: translateY(0%);
+            }
+            a:hover {
+                color: rgb(94, 156, 94);
+            }
+            .listadoNavbar {
+                display: none;
+                position: absolute;
+                top: 2.25em;
+                right: 0;
+                z-index: 1;
+                height: 7em;
+                font-family: "Alumni Sans Pinstripe", sans-serif;
+                font-weight: bold;
+                font-size: 1.5rem;
+                padding: 0.25em 0.50em 1em;
+
+            }
         }
     }
 }
+
+
 
 @media screen and (max-width: 1200px) {
     
