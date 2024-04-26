@@ -29,7 +29,30 @@
 }
 
 @media screen and (max-width: 992px) {
-    
+    .sectionDetalle {
+        /*background-color: whitesmoke;*/
+        border-radius: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5em;
+        padding: 0.5em 0 0.5em 0;
+        .iframeDetalle {
+            width: 376px; 
+            height: 190px;
+            /*box-shadow: 0 0 0.5em pink;*/
+        }
+        .subtituloDetalle {
+            color: palevioletred;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+        .textoDetalle {
+            font-size: 1rem;
+            text-align: center;
+            line-height: 1;
+        }
+    }
 }
 
 @media screen and (max-width: 1200px) {

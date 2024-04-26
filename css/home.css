@@ -118,9 +118,30 @@ main {
                 /*background-color: blue;*/
                 text-align: center;
                 line-height: 1.5;
-                font-size: 1rem;
+                font-size: 0.8rem;
             }
         }
+    }
+    /*VIDEO DE FONDO*/
+    .contenedorVideoInicial {
+        position: fixed;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    #videoFondo {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        min-height: 50%;
+        width: auto;
+        height: auto;
     }
 }
 

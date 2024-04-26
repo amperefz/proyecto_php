@@ -6,7 +6,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /*Ver de poner un poco más de margin-top para armonizar el diseño*/
     margin: 1em;
     .titulos {
         /*background-color: lightsalmon;*/
@@ -19,40 +18,50 @@ header {
         text-shadow: 2px 2px 4px rgba(3, 250, 81, 0.3);
         animation: crecimientodetitulo 1.5s linear 0s 1 normal none;
     }
-    .iconos {
-        /*background-color: lightsalmon;*/
-        position: absolute;
-        top: 1.6em;
-        right: 1.8em;
-        height: 15vh;
-        padding: 0.5em;
-        color: whitesmoke;
-        font-size: 2.8rem;
-        text-shadow: 0.5px 0.5px 0.5px rgba(3, 250, 81, 0.3);
-        transform: translateY(-50%);
+    .titulosDetalle {
+        font-size: 5rem;
     }
-    .listadoNavbar {
-        display: none;
-        position: absolute;
-        top: 0;
-        right: 0;
-        z-index: 1;
-        height: 30em;
-        font-family: "Alumni Sans Pinstripe", sans-serif;
-        font-weight: bold;
-        font-size: 1.5rem;
-        background-color: palevioletred;
-        border-radius: 1em;
-        padding: 0.25em 0.50em 1em;
-        opacity: 0.9;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-        /*box-shadow: 0px 0px 5px rgba(3, 250, 81, 0.5);*/
+    .navbarHeader {
+        display: flex;
+        text-align: center;
+        .iconos {
+            background-color: lightsalmon;
+            position: absolute;
+            top: 1.55em;
+            right: 1.8em;
+            height: 15vh;
+            padding: 0.5em;
+            color: whitesmoke;
+            font-size: 2.8rem;
+            text-shadow: 0.5px 0.5px 0.5px rgba(3, 250, 81, 0.3);
+            transform: translateY(-50%);
+        }
+        a:hover {
+            color: rgb(94, 156, 94);
+        }
+        .listadoNavbar {
+            display: none;
+            position: absolute;
+            top: 3.5em;
+            right: 0;
+            z-index: 1;
+            height: 7em;
+            font-family: "Alumni Sans Pinstripe", sans-serif;
+            font-weight: bold;
+            font-size: 1.5rem;
+            background-color: palevioletred;
+            border-radius: 1em;
+            padding: 0.25em 0.50em 1em;
+            opacity: 0.9;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            /*box-shadow: 0px 0px 5px rgba(3, 250, 81, 0.5);*/
+        }
     }
 }
 
-.iconos:hover + .listadoNavbar {
+/*.iconos:hover + .listadoNavbar {
     display: block;
-}
+}*/
 
 @media screen and (max-width: 992px) {
     header {
@@ -62,6 +71,9 @@ header {
             /*background-color: lightsalmon;*/
             font-size: 2rem;
             padding: 0 1em;
+        }
+        .titulosDetalle {
+            font-size: 1.8rem;
         }
         .iconos {
             /*background-color: lightsalmon;*/
@@ -139,13 +151,14 @@ footer {
         height: 8vh;
         .redesSociales {
             /*background-color: lightsalmon;*/
+            gap: 0.25em;
             a {
                 font-size: 1.5rem;
             }
         }
         .derechosFooter {
             /*background-color: lightsalmon;*/
-            font-size: 1rem;
+            font-size: 0.7rem;
         }
     }
 }
