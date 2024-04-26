@@ -7,7 +7,7 @@
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    gap: 1em;
+    /*gap: 1em;*/
     margin: 1em 28em 1em;
     padding: 1em;
     .formularioContacto, .formularioiniciarSesion, .formularioRegistro {
@@ -21,13 +21,21 @@
                 font-size: 1.4rem;
                 text-align: center;
                 width: 9em;
+                border-radius: 0.3em;
             }
             .formularioLabel {
                 font-family: "Alumni Sans Pinstripe", sans-serif; 
                 font-weight: bold;
                 font-size: 1.8rem;
                 color: black;
+                text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
             }
+        .checkboxFormulario {
+            input {
+                width: auto;
+                
+            }
+        }
         .textareaContacto {
             padding: 0.4em 0 0 0;
             textarea {
@@ -47,8 +55,7 @@
     }
     .anexosFormulario:hover {
         color: whitesmoke;
-        text-shadow: 2px 2px 4px rgba(0, 196, 62, 0.3);
-        transform: scale(1.1); 
+        text-shadow: 2px 2px 4px rgba(0, 196, 62, 0.3); 
     }
 }
 

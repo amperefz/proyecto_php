@@ -16,8 +16,9 @@ main {
         margin-top: -0.5em;
         margin-bottom: -0.45em;
         text-shadow: 1.8px 1.8px 3.8px rgba(3, 250, 81, 0.3);
+        transform: scale(1);
         opacity: 1;
-        animation: crecimientodetitulo 3s linear 0s 1 normal none;
+        animation: crecimientodetitulo 2s linear 0s 1 normal none;
     }
     .subtituloHome {
         /*background-color: blueviolet;*/
@@ -27,7 +28,7 @@ main {
         text-shadow: 2px 2px 4px rgba(0, 196, 62, 0.3); 
         margin-bottom: 2em;
         opacity: 1;
-        animation: crecimientodesubtitulo 4s linear 0s 1 normal none;
+        animation: crecimientodesubtitulo 3s linear 0s 1 normal none;
     }
     .contenedorTexto {
         margin: 1em 1em 0 1em; 
@@ -65,7 +66,7 @@ main {
     height: auto;
 }
 
-@keyframes crecimientodetitulo {
+/*@keyframes crecimientodetitulo {
     0% {
         font-size: 13rem;
         opacity: 0;
@@ -78,6 +79,21 @@ main {
         font-size: 14rem;
         opacity: 1rem;
     }
+}*/
+
+@keyframes crecimientodetitulo {
+    0% {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(0.95);
+        opacity: 0.5rem;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1rem;
+    } 
 }
 
 @keyframes crecimientodesubtitulo {

@@ -6,6 +6,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /*Ver de poner un poco más de margin-top para armonizar el diseño*/
     margin: 1em;
     .titulos {
         /*background-color: lightsalmon;*/
@@ -16,6 +17,7 @@ header {
         padding: 0 1em;
         margin: 0 auto;
         text-shadow: 2px 2px 4px rgba(3, 250, 81, 0.3);
+        animation: crecimientodetitulo 1.5s linear 0s 1 normal none;
     }
     .iconos {
         /*background-color: lightsalmon;*/
