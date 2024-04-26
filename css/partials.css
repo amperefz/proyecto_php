@@ -25,7 +25,7 @@ header {
         display: flex;
         text-align: center;
         .iconos {
-            background-color: lightsalmon;
+            /*background-color: lightsalmon;*/
             position: absolute;
             top: 1.55em;
             right: 1.8em;
