@@ -20,7 +20,7 @@
                 font-weight: bold;
                 font-size: 1.4rem;
                 text-align: center;
-                width: 9em;
+                width: 10em;
                 border-radius: 0.3em;
             }
             .formularioLabel {
@@ -59,7 +59,53 @@
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 992px) {
+    .formularioContenedor {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        /*gap: 1em;*/
+        margin: 0.5em 1em 0.5em;
+        padding: 1em;
+        .formularioContacto, .formularioiniciarSesion, .formularioRegistro {
+            .formularioGrupo {
+                align-items: center;
+                margin: 1em;
+            }
+                input {
+                    font-size: 1.2rem;
+                    text-align: center;
+                    width: 15em;
+                }
+                .formularioLabel {
+                    font-size: 1.3rem;
+                }
+            .checkboxFormulario {
+                input {
+                    width: auto;
+                }
+            }
+            .textareaContacto {
+                padding: 0.4em 0 0 0;
+                textarea {
+                    font-family: "Alumni Sans Pinstripe", sans-serif;
+                    font-weight: bold;
+                    text-align: center;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+        .anexosFormulario {
+            font-size: 1rem;
+        }
+    }  
+}
+
+@media screen and (max-width: 1200px) {
     
 }
 
+@media screen and (max-width: 1400px) {
+
+}

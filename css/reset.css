@@ -71,14 +71,25 @@ p {
     color: whitesmoke;
     padding: 0.2em 0.4em;
     cursor: pointer;
-
 }
 
 .buttons:hover {
     background-color: pink;
     color: black;
+    animation: zoomButtons 0.25s ease-in-out 0s 1 normal none
 }
 
+@keyframes zoomButtons {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.95);
+    }
+    100% {
+        transform: scale(1);
+    }    
+}
 
 /*EFECTOS*/
 a:hover {
@@ -86,23 +97,36 @@ a:hover {
 }
 
 
-@media screen and (max-width: 576px) {
-    
-}
-
-@media screen and (max-width: 768px) {
-
-}
-
 @media screen and (max-width: 992px) {
-
+    h2 { 
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1rem;
+        color: pink;
+    }
+    p {
+        font-size: 1.2rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+    .buttons {
+        background-color: black;
+        /*border: 2px solid palevioletred;*/
+        border-radius: 0.5em;
+        margin-top: 0.5em;
+        gap: 1em;
+        font-family: "Alumni Sans Pinstripe", sans-serif; 
+        font-weight: bolder;
+        font-size: 1.25rem;
+        color: whitesmoke;
+        padding: 0.2em 0.4em;
+        cursor: pointer;
+    }
 }
 
 @media screen and (max-width: 1200px) {
-
+    
 }
 
 @media screen and (max-width: 1400px) {
-    
+
 }
 
