@@ -18,19 +18,22 @@
                 <li><a href="./registro.html">Registrate en Videoclub</a></li>
                 <li><a href="./sobrevideoclub.html">Sobre Videoclub</a></li>
                 <li><a href="./contacto.html">Contactate con Videoclub</a></li>
+                <li><a href="./api.html">Conexión a API</a></li>
                 <li><a href="../index.html">Volvé al inicio</a></li>
             </ul>
         </nav>
     </header>
     <main class="formularioContenedor">
-        <form class="formularioiniciarSesion" action="" method="post" enctype="application/x-www-form-urlencoded">
+        <form id="loginForm" class="formularioiniciarSesion" action="" method="post" enctype="application/x-www-form-urlencoded">
             <div class="formularioGrupo">
-                <label class="formularioLabel" for="Nombredeusuarix">NOMBRE DE USUARIX: </label>
-                <input type="text" name="Nombredeusuarix" placeholder="Ingresá tu nombre de usuarix" size="23" required>
+                <label class="formularioLabel" for="nombredeusuarixLogin">NOMBRE DE USUARIX: </label>
+                <input type="text" name="nombredeusuarix" id="nombredeusuarixLogin" placeholder="Ingresá tu nombre de usuarix" size="23" required>
+                <div id="nombreloginError" class="error-message"></div>
             </div>
             <div class="formularioGrupo">
-                <label class="formularioLabel" for="Contraseña">CONTRASEÑA: </label>
-                <input type="password" name="Contraseña" id="Contraseña" placeholder="Ingresá tu contraseña" size="23" required>
+                <label class="formularioLabel" for="contraseñaLogin">CONTRASEÑA: </label>
+                <input type="password" name="contraseña" id="contraseñaLogin" placeholder="Ingresá tu contraseña" size="23" required>
+                <div id="contraseñaloginError" class="error-message"></div>
             </div>
             <div>
                 <a class="anexosFormulario" href="./contraseñaolvidada.html">¿Olvidaste tu contraseña?</a>
@@ -58,5 +61,6 @@
         <p class="derechosFooter">Todos los derechos reservados ©</p>
     </footer>
     <script src="../js/index.js"></script>
+    <script src="../js/validacion_login.js"></script>
 </body>
 </html>

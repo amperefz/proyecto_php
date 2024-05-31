@@ -1,0 +1,48 @@
+.peliculasSection {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    text-shadow: 0.5px 0.5px 0.5px rgba(3, 250, 81, 0.3);
+    :hover {
+        background-color: rgb(94, 156, 94);
+        color: pink;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+}
+
+.linkPeliculas {
+    display: flex;
+    align-items: center;
+    background-color: palevioletred;
+    border-radius: 2em;
+    padding: 1em 0.5em 2em 0.5em;
+    margin: 1em;
+    width: 30%;
+
+}
+
+.tarjetaPeliculas {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+
+}
+
+.cuerpoPeliculas {
+    width: 80%;
+    margin: auto;
+}
+
+.tituloPeliculas {
+    font-family: "Alumni Sans Pinstripe", sans-serif; 
+    font-weight: bolder;
+    text-align: center;
+    font-size: 1.75em;
+    color: whitesmoke;
+    padding-bottom: 0.5em;
+}
+
+.imagenesPeliculas {
+    width: 100%;
+}

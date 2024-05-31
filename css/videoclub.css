@@ -225,6 +225,20 @@ iframe:hover {
 }
 }
 
+.conexionApi {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+    :hover {
+        color: rgb(94, 156, 94);
+    }
+    .api {
+        font-family: "Alumni Sans Pinstripe", sans-serif;
+        font-size: 2.5rem;
+        text-shadow: 2px 2px 4px rgba(0, 196, 62, 0.3);
+    }
+};
+
 @media screen and (max-width: 1200px) {
     
 }

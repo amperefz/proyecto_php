@@ -24,3 +24,12 @@
 
 /*DETALLE*/
 @import url("../css/detalle.css");
+
+/*TIENDA*/
+@import url("../css/tienda.css");
+
+/*API*/
+@import url("../css/api.css");
+
+/*API 2*/
+@import url("../css/api2.css");

@@ -1,4 +1,13 @@
+pages/pruebaboots.html
+pages/extras/peliculasarray.html
+pages/extras/peliculasapi.html
+pages/extras/apidelclima.html
+pages/extras/paravalidar.html
+
 css/bootstrap.css
 css/bootstrap.min.css
 css/estilosboots.css
+
 js/bootstrap.bundle.min.js
+js/extras1/validacion_simple.js
+js/extras1/validacion_dos.js

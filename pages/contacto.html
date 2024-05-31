@@ -18,6 +18,7 @@
                 <li><a href="./registro.html">Registrate en Videoclub</a></li>
                 <li><a href="./iniciarsesion.html">Iniciá sesión en Videoclub</a></li>
                 <li><a href="./sobrevideoclub.html">Sobre Videoclub</a></li>
+                <li><a href="./api.html">Conexión a API</a></li>
                 <li><a href="../index.html">Volvé al inicio</a></li>
             </ul>
         </nav>
@@ -28,21 +29,25 @@
                 <p>Si querés ponerte en contacto con Videoclub, llená este formulario.</p>
             </div>
             <div class="formularioContacto">
-                <form action="" method="post" enctype="application/x-www-form-urlencoded">  
+                <form id="contactoForm" action="" method="post" enctype="application/x-www-form-urlencoded">  
                     <div class="formularioGrupo">
                         <label  class="formularioLabel" for="Nombre">NOMBRE: </label>
-                        <input type="text" placeholder="Ingresá tu nombre" size="23" required>
+                        <input type="text" id="nombreContacto" placeholder="Ingresá tu nombre" size="23" required>
+                        <div id="nombreError" class="error-message"></div>
                     </div>
                     <div class="formularioGrupo">
                         <label class="formularioLabel"for="Asunto">ASUNTO: </label>
-                        <input type="text" placeholder="Indicá el asunto" size="23" required>
+                        <input type="text" id="asuntoContacto" placeholder="Indicá el asunto" size="23" required>
+                        <div id="asuntoError" class="error-message"></div>
                     </div>
                     <div class="formularioGrupo">
                         <label class="formularioLabel" for="Email">E-MAIL: </label>
-                        <input type="email" placeholder="****@gmail.com" size="23" required>
+                        <input type="email" id="emailContacto" placeholder="****@gmail.com" size="23" required>
+                        <div id="emailError" class="error-message"></div>
                     </div>
                     <div class="textareaContacto">
-                        <textarea name="Mensaje" id="Mensaje" rows="5" cols="37" placeholder="***Ingresá tu mensaje***" required></textarea>
+                        <textarea name="Mensaje" id="mensajeContacto" rows="5" cols="37" placeholder="***Ingresá tu mensaje***" required></textarea>
+                        <div id="mensajeError" class="error-message"></div>
                     </div>
                     <div class="formularioGrupo">
                         <input class="buttons" type="reset" name="Limpiar" value="Limpiar">
@@ -72,5 +77,6 @@
         <p class="derechosFooter">Todos los derechos reservados ©</p>
     </footer>
     <script src="../js/index.js"></script>
+    <script src="../js/validacion_contacto.js"></script>
 </body>
 </html>

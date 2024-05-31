@@ -10,6 +10,7 @@
 </head>
 <body>
     <header>
+        <!--Ver si no puede ser mejor que sea una sección de suscripción con los medios de pago-->
         <h1 class="titulos">Registrate en Videoclub</h1>
         <nav class="navbarHeader">
             <a class="iconos" href="#"><i class="fa-solid fa-bars"></i></a> 
@@ -18,44 +19,54 @@
                 <li><a href="./iniciarsesion.html">Iniciá sesión en Videoclub</a></li>
                 <li><a href="./sobrevideoclub.html">Sobre Videoclub</a></li>
                 <li><a href="./contacto.html">Contactate con Videoclub</a></li>
+                <li><a href="./api.html">Conexión a API</a></li>
                 <li><a href="../index.html">Volvé al inicio</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section  class="formularioContenedor" >
-            <form  class="formularioRegistro" action="" method="post" enctype="application/x-www-form-urlencoded">
+        <section class="formularioContenedor" >
+            <form class="formularioRegistro" id="registroForm" action="" method="post" enctype="application/x-www-form-urlencoded">
                 <div class="formularioGrupo">
-                    <label class="formularioLabel" for="Nombre">NOMBRE: </label>
-                    <input type="text" name="Nombre" placeholder="Ingresá tu nombre" size="23" required>
+                    <label class="formularioLabel" for="nombreRegistro">NOMBRE: </label>
+                    <input type="text" name="Nombre" id="nombreRegistro" placeholder="Ingresá tu nombre" size="23" required>
+                    <div id="nombreregistroError" class="error-message"></div>
                 </div>
                 <div class="formularioGrupo">
-                    <label class="formularioLabel" for="Apellido">APELLIDO: </label>
-                    <input type="text" name="Apellido" placeholder="Ingresá tu apellido" size="23" required>
+                    <label class="formularioLabel" for="apellidoRegistro">APELLIDO: </label>
+                    <input type="text" name="Apellido" id="apellidoRegistro" placeholder="Ingresá tu apellido" size="23" required>
+                    <div id="apellidoregistroError" class="error-message"></div>
                 </div>
                 <div class="formularioGrupo">
-                    <label class="formularioLabel" for="Fechadenacimiento">FECHA DE NACIMIENTO: </label>
-                    <input type="date" name="Fechadenacimiento" size="23" required>
+                    <label class="formularioLabel" for="fechadenacimientoRegistro">FECHA DE NACIMIENTO: </label>
+                    <input type="date" id="fechadenacimientoRegistro" name="Fechadenacimiento" size="23" required>
+                    <div id="fechadenacimientoregistroError" class="error-message"></div>
                 </div>
                 <div class="formularioGrupo">
-                    <label class="formularioLabel" for="Email">E-MAIL: </label>
-                    <input type="email" name="Email" size="23" placeholder="Ingresá tu e-mail">
+                    <label class="formularioLabel" for="emailRegistro">E-MAIL: </label>
+                    <input type="email" name="Email" id="emailRegistro" size="23" placeholder="Ingresá tu e-mail" required>
+                    <div id="emailregistroError" class="error-message"></div>
                 </div>
                 <div class="formularioGrupo">
-                    <label class="formularioLabel" for="Nombredeusuarix">NOMBRE DE USUARIX: </label>
-                    <input type="text" name="Nombredeusuarix" placeholder="Ingresá tu nombre de usuarix" size="23" required>
+                    <label class="formularioLabel" for="nombredeusuarixRegistro">NOMBRE DE USUARIX: </label>
+                    <input type="text" name="Nombredeusuarix" id="nombredeusuarixRegistro" placeholder="Ingresá tu nombre de usuarix" size="23" required>
+                    <div id="nombredeusuarixregistroError" class="error-message"></div>
                 </div>
                 <div class="formularioGrupo">
-                    <label class="formularioLabel" for="Contraseña">CONTRASEÑA: </label>
-                    <input type="password" name="Contraseña" placeholder="Ingresá tu contraseña" size="23" required>
+                    <label class="formularioLabel" for="contraseñaRegistro">CONTRASEÑA: </label>
+                    <input type="password" name="Contraseña" id="contraseñaRegistro" placeholder="Ingresá tu contraseña" size="23" required>
+                    <div id="contraseñaregistroError" class="error-message"></div>
                 </div>
                 <div class="formularioGrupo">
-                    <label class="formularioLabel" for="Reconfirmarcontraseña">RECONFIRMAR CONTRASEÑA: </label>
-                    <input type="password" name="Reconfirmarcontraseña" placeholder="Volvé a ingresar tu contraseña" size="23" required>
+                    <label class="formularioLabel" for="reconfirmarcontraseñaRegistro">RECONFIRMAR CONTRASEÑA: </label>
+                    <input type="password" name="Reconfirmarcontraseña" id="reconfirmarcontraseñaRegistro" placeholder="Volvé a ingresar tu contraseña" size="23" required>
+                    <div id="reconfirmarcontraseñaregistroError" class="error-message"></div>
                 </div>
+                <!--Términos y condiciones podría ser un recuadro que se abra sobre la página-->
                 <div class="checkboxFormulario">
-                    <input type="checkbox" value="Términos" id="Términos" name="Términosycondiciones" value="Acepto los términos y condiciones">
-                    <label class="anexosFormulario" for="Término">Acepto los términos y condiciones.</label>
+                    <input type="checkbox" value="Términos" id="terminosRegistro" name="Términosycondiciones" value="Acepto los términos y condiciones" required>
+                    <label class="anexosFormulario" for="terminosRegistro">Acepto los términos y condiciones.</label>
+                    <div id="terminosregistroError" class="error-message"></div>
                 </div>
                 <div class="formularioGrupo">
                     <input class="buttons" type="reset" name="Limpiar" value="Limpiar">
@@ -81,5 +92,6 @@
         <p class="derechosFooter">Todos los derechos reservados ©</p>
     </footer>
     <script src="../js/index.js"></script>
+    <script src="../js/validacion_registro.js"></script>
 </body>
 </html>
