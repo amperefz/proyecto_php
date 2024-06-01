@@ -24,7 +24,7 @@ main {
         /*background-color: blueviolet;*/
         text-align: right;
         font-size: 1.5rem;
-        padding-right: 3.5em;
+        padding-right: 4.5em;
         text-shadow: 2px 2px 4px rgba(0, 196, 62, 0.3); 
         margin-bottom: 2em;
         opacity: 1;
@@ -109,7 +109,7 @@ main {
         .subtituloHome {
             /*background-color: blueviolet;*/
             font-size: 0.4rem;
-            padding-right: 1em;
+            padding-right: 0.9em;
             margin-bottom: 2em;
         }
         .contenedorTexto {
@@ -145,10 +145,58 @@ main {
     }
 }
 
-@media screen and (max-width: 1200px) {
-    
+@media screen and (min-width: 993px) and (max-width: 1399px) {
+    main {
+        .sectionHome {
+        /*background-color: palegreen;*/
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 1em;
+        }
+        .tituloHome {
+            /*background-color: lightslategray;*/
+            font-size: 11rem;
+        }
+        .subtituloHome {
+            /*background-color: blueviolet;*/
+            font-size: 1rem;
+            padding-right: 5.5em;
+            margin-bottom: 2em;
+        }
+        .contenedorTexto {
+            margin: 1em 1em 0 1em; 
+            .textoHome {
+                /*background-color: blue;*/
+                text-align: center;
+                line-height: 1.5;
+                font-size: 1.4rem;
+            }
+        }
+    }
+    /*VIDEO DE FONDO*/
+    .contenedorVideoInicial {
+        position: fixed;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    #videoFondo {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        min-height: 50%;
+        width: auto;
+        height: auto;
+    }
 }
 
-@media screen and (max-width: 1400px) {
-
+@media screen and (min-width: 1399px) {
+    
 }

@@ -225,6 +225,14 @@ iframe:hover {
 }
 }
 
+@media screen and (min-width: 993px) and (max-width: 1399px) {
+    
+}
+
+@media screen and (min-width: 1300px) {
+
+}
+
 .conexionApi {
     display: flex;
     justify-content: center;
@@ -238,11 +246,3 @@ iframe:hover {
         text-shadow: 2px 2px 4px rgba(0, 196, 62, 0.3);
     }
 };
-
-@media screen and (max-width: 1200px) {
-    
-}
-
-@media screen and (max-width: 1400px) {
-
-}
