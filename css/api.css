@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: 100%;
     text-shadow: 0.5px 0.5px 0.5px rgba(3, 250, 81, 0.3);
     :hover {
         background-color: rgb(94, 156, 94);
@@ -12,26 +11,19 @@
 }
 
 .linkPeliculas {
-    display: flex;
-    align-items: center;
     background-color: palevioletred;
     border-radius: 2em;
-    padding: 1em 0.5em 2em 0.5em;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 1em;
     margin: 1em;
-    width: 30%;
-
+    padding: 2em 1em;
 }
 
 .tarjetaPeliculas {
-    width: 90%;
-    margin: auto;
-    overflow: hidden;
-
-}
-
-.cuerpoPeliculas {
-    width: 80%;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
 
 .tituloPeliculas {
@@ -40,9 +32,16 @@
     text-align: center;
     font-size: 1.75em;
     color: whitesmoke;
-    padding-bottom: 0.5em;
 }
 
 .imagenesPeliculas {
-    width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+    .linkPeliculas {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }   
+    .tituloPeliculas {
+        font-size: 1.5em;
+    }
 }

@@ -1,13 +1,13 @@
     function crearTarjetaPelicula(pelicula) {
         const cardLink = document.createElement("a");
         cardLink.classList.add("linkPeliculas");
-        cardLink.href = "detalle.html";
+        cardLink.href = `https://image.tmdb.org/t/p/w500/${pelicula.poster_path}`;
 
         const card = document.createElement("div");
         card.classList.add("tarjetaPeliculas");
 
-        const cardBody = document.createElement("div");
-        cardBody.classList.add("cuerpoPeliculas");
+        //const cardBody = document.createElement("div");
+        //cardBody.classList.add("cuerpoPeliculas");
 
         const cardTitle = document.createElement("h5");
         cardTitle.classList.add('tituloPeliculas');
@@ -19,9 +19,9 @@
         cardImg.alt = pelicula.title;
         cardImg.loading = "lazy";
 
-        cardBody.appendChild(cardTitle);
-        cardBody.appendChild(cardImg);
-        card.appendChild(cardBody);
+        card.appendChild(cardTitle);
+        card.appendChild(cardImg);
+        //card.appendChild(cardBody);
         cardLink.appendChild(card);
 
         return cardLink
